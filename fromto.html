@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Approval page</title>
+	<style>
+div { 
+	display: block; 
+}
+</style>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+</head>
+
+<body>
+	
+<div w3-include-html="menu.html"></div> 
+
+<script>
+includeHTML();
+</script>
+
+
+<hr />
+<p><font face="Arial, Helvetica, sans-serif">From... to</font></p>
+
+<div>
+	
+<table><!--
+	<tr valign="top"> 
+	<td colspan="6"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">970x250</font><br />
+	<iframe src="cardio/970x250/UWM_cardio_970x250.html" width="970" height="250" style="border:none;"></iframe></td>
+	<td>&nbsp;  </td>	
+	</tr>
+	
+	<tr height="20px"></tr> -->
+	
+	<tr valign="top"> 
+	<td><font face="Arial, Helvetica, sans-serif" color="#000">300x600</font><br />
+	<iframe src="FromTo/300x600/HP_FromTo_Display_300x600.html" width="300" height="600" style="border:none;"></iframe></td>
+	<td>&nbsp;  </td>
+<!--
+	<td><font face="Arial, Helvetica, sans-serif" color="#000">160x600</font><br />
+	<iframe src="Healthier/160x600/WhiteCenter_Healthier_Display_160x600.html" width="160" height="600" style="border:none;"></iframe></td>
+	<td>&nbsp;  </td>
+		
+	<td><font face="Arial, Helvetica, sans-serif" color="#000">300x250</font><br />
+	<iframe src="Healthier/300x250-alt/WhiteCenter_Healthier-alt_Display_300x250.html" width="300" height="250" style="border:none;"></iframe></td>
+	<td>&nbsp;  </td>		
+	-->
+	</tr>
+	<!--
+	<tr height="20px"></tr>
+	
+	<tr valign="top">
+	<td colspan="5"><font face="Arial, Helvetica, sans-serif" color="#000">728x90</font><br />
+	<iframe src="Healthier/728x90/WhiteCenter_Healthier_Display_728x90.html" width="728" height="90" style="border:none;"></iframe></td>
+	<td>&nbsp;  </td>	
+	</tr>
+	
+	<tr height="20px"></tr>
+	
+	<tr valign="top">
+	<td colspan="3"><font face="Arial, Helvetica, sans-serif" color="#000">320x50</font><br />
+	<iframe src="Healthier/320x50/WhiteCenter_Healthier_Display_320x50.html" width="320" height="50" style="border:none;"></iframe></td>
+	<td>&nbsp;  </td>
+
+	<td><font face="Arial, Helvetica, sans-serif" color="#000">300x50</font><br />
+	<iframe src="Healthier/300x50/WhiteCenter_Healthier_Display_300x50.html" width="300" height="50" style="border:none;"></iframe></td>
+	</tr>
+	-->
+	
+</table>
+
+<p></p>
+<hr />
+</div>
+	
+</body>
+</html>
