@@ -1205,29 +1205,27 @@ if (reversed == null) { reversed = false; }
 
 	// PIC2
 	this.instance_7 = new lib.PIC2();
-	this.instance_7.setTransform(150,810,1,1,0,0,0,150,-90);
-	this.instance_7._off = true;
+	this.instance_7.setTransform(150,534,1,1,0,0,0,150,-90);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(39).to({_off:false},0).to({y:534},20,cjs.Ease.quintInOut).wait(60).to({y:973.5},20,cjs.Ease.quintInOut).to({_off:true},1).wait(97));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(119).to({y:973.5},20,cjs.Ease.quintInOut).to({_off:true},1).wait(97));
 
 	// PIC1
 	this.instance_8 = new lib.PIC1();
-	this.instance_8.setTransform(300,180,1,1,0,0,0,150,-90);
+	this.instance_8.setTransform(300,70,1,1,0,0,0,150,-90);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(39).to({y:70},20,cjs.Ease.quintInOut).wait(60).to({y:509.5},20,cjs.Ease.quintInOut).to({_off:true},1).wait(97));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(119).to({y:509.5},20,cjs.Ease.quintInOut).to({_off:true},1).wait(97));
 
 	// HEAD1a
 	this.instance_9 = new lib.HEAD1a();
-	this.instance_9.setTransform(150,167,1,1,0,0,0,0,35);
+	this.instance_9.setTransform(150,57,1,1,0,0,0,0,35);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(39).to({y:57},20,cjs.Ease.quintInOut).wait(55).to({alpha:0},10).to({_off:true},1).wait(112));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(114).to({alpha:0},10).to({_off:true},1).wait(112));
 
 	// HEAD1b
 	this.instance_10 = new lib.HEAD1b();
-	this.instance_10.setTransform(150,635,1,1,0,0,0,0,35);
-	this.instance_10._off = true;
+	this.instance_10.setTransform(150,359,1,1,0,0,0,0,35);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(39).to({_off:false},0).to({y:359},20,cjs.Ease.quintInOut).wait(55).to({alpha:0},10).to({_off:true},1).wait(112));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(114).to({alpha:0},10).to({_off:true},1).wait(112));
 
 	// EndFrameCover
 	this.instance_11 = new lib.EndFrameCover();

@@ -1385,30 +1385,27 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD1b
 	this.instance_12 = new lib.HEAD1b();
-	this.instance_12.setTransform(-28.45,112,1.5387,1.5387,0,0,0,0.1,35.1);
-	this.instance_12._off = true;
+	this.instance_12.setTransform(-28.4,58,1.5387,1.5387,0,0,0,0.1,35.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(29).to({_off:false},0).to({x:-28.4,y:58},20,cjs.Ease.quintInOut).wait(55).to({y:144},10,cjs.Ease.quintInOut).to({_off:true},1).wait(159));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(104).to({y:144},10,cjs.Ease.quintInOut).to({_off:true},1).wait(159));
 
 	// PIC1
 	this.instance_13 = new lib.PIC1();
 	this.instance_13.setTransform(351.05,45,0.5,0.5,0,0,0,-199.9,90);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(104).to({y:135},10,cjs.Ease.quintInOut).to({_off:true},1).wait(159));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(107).to({y:135},10,cjs.Ease.quintInOut).to({_off:true},1).wait(156));
 
 	// HEAD1c
 	this.instance_14 = new lib.HEAD1c();
-	this.instance_14.setTransform(378.55,142,1.5387,1.5387,0,0,0,0.1,35.1);
-	this.instance_14._off = true;
+	this.instance_14.setTransform(378.6,58,1.5387,1.5387,0,0,0,0.1,35.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(69).to({_off:false},0).to({x:378.6,y:58},20,cjs.Ease.quintInOut).wait(15).to({y:144},10,cjs.Ease.quintInOut).to({_off:true},1).wait(159));
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(104).to({y:144},10,cjs.Ease.quintInOut).to({_off:true},1).wait(159));
 
 	// PIC2
 	this.instance_15 = new lib.PIC2();
 	this.instance_15.setTransform(628.05,45,0.5,0.5,0,0,0,-199.9,90);
-	this.instance_15._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(69).to({_off:false},0).wait(35).to({y:135},10,cjs.Ease.quintInOut).to({_off:true},1).wait(159));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(107).to({y:135},10,cjs.Ease.quintInOut).to({_off:true},1).wait(156));
 
 	// BKGD
 	this.shape_1 = new cjs.Shape();
@@ -1422,8 +1419,8 @@ if (reversed == null) { reversed = false; }
 	this.instance_17 = new lib.Tween8("synched",0);
 	this.instance_17.setTransform(364,135);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1}]}).to({state:[{t:this.instance_16}]},104).to({state:[{t:this.instance_17}]},10).to({state:[]},1).wait(159));
-	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(104).to({_off:false},0).to({_off:true,y:135},10,cjs.Ease.quintInOut).wait(160));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1}]}).to({state:[{t:this.instance_16}]},107).to({state:[{t:this.instance_17}]},10).to({state:[]},1).wait(156));
+	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(107).to({_off:false},0).to({_off:true,y:135},10,cjs.Ease.quintInOut).wait(157));
 
 	// BKGD_green_type
 	this.instance_18 = new lib.Tween5("synched",0);
