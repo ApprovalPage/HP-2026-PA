@@ -1235,10 +1235,9 @@ if (reversed == null) { reversed = false; }
 
 	// HEAD1b
 	this.instance_13 = new lib.HEAD1b();
-	this.instance_13.setTransform(149.95,144,1,1,0,0,0,0,35);
-	this.instance_13._off = true;
+	this.instance_13.setTransform(150,45,1,1,0,0,0,0,35);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(29).to({_off:false},0).to({x:150,y:45},20,cjs.Ease.quintInOut).wait(33).to({alpha:0},10).to({_off:true},1).wait(203));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(82).to({alpha:0},10).to({_off:true},1).wait(203));
 
 	// PIC2
 	this.instance_14 = new lib.PIC2();
